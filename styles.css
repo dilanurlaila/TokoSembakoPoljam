@@ -1,0 +1,258 @@
+/* Reset margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Atur body dasar */
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #003366; /* Warna biru gelap */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 1rem;
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffcc00 !important; /* Warna kuning saat hover */
+}
+
+.navbar-toggler {
+    border-color: #ffcc00;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Product Card */
+.card {
+    min-height: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk efek kedalaman */
+    overflow: hidden;  /* Pastikan isi card tidak meluap */
+    transition: transform 0.3s ease-in-out; /* Efek transisi saat hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efek zoom saat card dihover */
+}
+
+.card-body {
+    flex-grow: 1 ;
+    padding: 15px;
+    text-align: center; /* Pastikan teks di tengah untuk tampilan yang rapi */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    background-color: #003366; /* Warna biru gelap */
+    color: #ffffff;
+    position: relative;
+    text-align: center; /* Teks di tengah */
+    width: 100%; /* Lebar 100% */
+    clear: both; /* Menghindari footer menutupi konten */
+}
+
+footer a {
+    color: #ffcc00; /* Warna kuning untuk link */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+
+/* Form */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="number"],
+form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries untuk Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .product {
+        margin-bottom: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
+/* Responsive adjustments */
+@media (max-width: 100px) {
+    .product-title {
+        font-size: 1.5rem;
+    }
+
+    .product-description {
+        font-size: 1rem;
+    }
+
+    .product-price {
+        font-size: 1.2rem;
+    }
+}
+
+/* Style for product detail page */
+.product-image {
+    width: 500px; /* Atur lebar kontainer produk */
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Efek transisi saat hover */
+}
+
+.product-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #003366; /* Warna biru gelap */
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.product-stock {
+    font-size: 1rem;
+    color: green;
+}
+
+.banner-carousel img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-carousel {
+    position: relative;
+    width: 100%;
+    max-height: 300px; /* Set the height as needed */
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.min-vh-100 {
+    min-height: 100vh; /* Membuat container mencakup tinggi 100% viewport */
+}
+
+.flex-grow-1 {
+    flex-grow: 1; /* Membuat main mengambil semua ruang yang tersedia */
+}

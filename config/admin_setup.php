@@ -1,0 +1,1 @@
+echo 'c3d2a73f811f40e4851e3baffab691767c09ab72e9358e9aa86e637ba91fa62a' > /path/to/project/config/admin_setup.token
